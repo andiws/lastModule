@@ -11,7 +11,7 @@ public class NormalizeText {
 
         String s1="This is some \\\"really\\\" great. (Text)!?";
         String replaceString=s1.replaceAll("\\s", "");//replaces all occurrences of spaces
-        String replaceString1 = s1.replaceAll("[.,:;’”!?()]", "");
+        String replaceString1 = s1.replaceAll("[.,:;'\"!?()\\\\]", "");
         String replaceString2 = s1.toUpperCase();
 
         System.out.println(replaceString);
